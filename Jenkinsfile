@@ -1,15 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                sh 'echo "Checking out files"'
-            }
-        }
 
         stage('Build') {
             steps {
-                sh 'echo "Building files"'
+                sh 'mvn clean'
+            }
+            steps {
+                sh 'mvn compile'
             }
         }
 
