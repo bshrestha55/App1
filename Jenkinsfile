@@ -29,7 +29,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'java -jar /Users/shrbi001/Documents/app1.jar'
+                sh 'java -jar /Users/shrbi001/JenkinTest/app1.jar'
             }
         }
     }
