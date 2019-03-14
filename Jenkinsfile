@@ -4,8 +4,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean'
-                sh 'mvn compile'
+                withMaven(maven: 'maven_3_6_0'){
+                  sh 'mvn clean'
+                  sh 'mvn compile'
+                }
             }
 
         }
