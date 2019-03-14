@@ -21,7 +21,7 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                sh 'Running Unit Test'
+                sh 'echo "Running Unit Test"'
             }
         }
     }
