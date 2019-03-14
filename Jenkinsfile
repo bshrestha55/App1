@@ -22,6 +22,7 @@ pipeline {
             steps {
               withMaven(maven: 'maven_3_6_0'){
                 sh 'mvn package'
+                sh 'whoami'
                 sh 'cp target/app1-0.0.1-SNAPSHOT.jar /Users/shrbi001/Documents/jar/app1.jar'
               }
             }
